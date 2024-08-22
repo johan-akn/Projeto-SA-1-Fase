@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="excluir.css">
+    <title>Excluir Conta</title>
+</head>
+<body onload="PuxarDados()">
+    
+    <div class="Cabeçalho">
+        <a href="/FarmaFind - Tela Inicio/inicio.html">
+            <img class="logo" src="/imgs/logo.png" > 
+        </a>
+        <div class="IconeUsuario">
+            <a href="/FarmaFind - Menu/menu.html"><img class="usuario" src="/imgs/icone usuario cinza.png"></a>
+    </div> 
+    </div>
+
+    <div class="container">
+        
+        <div class="logo2">
+            <img class="iconeUsuario" src="/imgs/ícone usuário azul escuro.png" alt="icone usuario">
+        </div>
+
+        <p>Excluir conta</p>
+
+        
+        <div id="informacoes">
+            <div class="containerInput">
+                <label class="labelInput">Email: </label>
+                <div class="input-icon">
+                <img src="/imgs/icone email.png.png" class="iconEmail">
+                <input type="email" id="inptEmail">
+            </div>
+            </div>
+            
+            <div class="containerInput">
+                <label class="labelInput">Senha:</label>              
+                <div class="input-icon">
+                <img src="/imgs/icone chave.png" class="iconEmail">
+                <input type="password" id="inptSenha">
+            </div>
+        </div>
+
+        <a href="/FarmaFind - Menu/menu.html" class="voltar">Voltar ao Menu</a>
+
+            </div>
+
+            <div class="botao">
+                <button onclick="ExcluirConta()" class="animated-button">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                    </svg>
+                    <span class="text">Excluir</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+            <label id="avisoErro"></label>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="/codigos-sa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #63A2E0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.Cabeçalho{
+
+    background-color: #00539C;
+    display: flex;
+    align-items: flex-start;
+    height: 2cm;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0px 3px 12px #000;
+    position: absolute;
+}
+
+.logo{
+
+    height: 1.5cm;
+    width: 1.5cm;
+    margin-top: 5px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10cm;
+   
+}
+
+.iconeAzul{
+    
+    height: 2cm;
+    width: 2cm;
+}
+
+
+h2{
+
+    margin-left: 10px;
+    
+}
+
+.ContainerPerfil{
+
+    display: flex;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.ContainerPerfil img{
+
+    margin-top: 20px;
+}
+
+
+.Container{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #E1E1E1;
+    align-items: center;
+    margin: auto;
+    border-radius: 27px;
+    box-shadow: 3px 3px 13px;
+    box-shadow: #000;
+
+    display: flex;
+    width: 500px;
+    margin-top: 150px;
+    padding: 30px;
+
+    
+    
+
+}
+.Dados button{
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+button:hover{
+
+    cursor: pointer;
+}
+  
+ 
+
+.ContainerDados{
+
+    height: 40%;
+    width: 15cm;
+    border-radius: 27px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+
+input{
+    
+    border: solid;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: #00539C;  
+    width: 100%;
+    height: 19px;
+      
+  }
+
+.Dados{
+    
+    width: 300px;
+    transform: scale(1.01);
+    margin-bottom: 5px;
+}
+
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  
+  }
+
+.Inputs{
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    transform: scale(1.1);
+}
+
+.OpcoesBotoes{
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 70px;
+    
+    
+    
+}
+.OpcoesBotoes button{
+
+    margin-bottom: 40px;
+}
+
+button{
+
+    width: 150px;
+    padding: 10px;
+    background-color: #00539C;
+    color: white;
+    border-radius: 22px;
+    font-size: 15px;
+    border: none;
+    
+}
+.dados-botoes{
+
+    display: flex;
+    
+}
+
+p{
+    margin-left: 5px;
+}
+
+button{
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do popup */
+.popup-content {
+
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    width: 200px;
+    height: 120px; 
+    text-align: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}

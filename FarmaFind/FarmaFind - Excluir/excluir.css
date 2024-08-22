@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    background-color: #63A2E0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.Cabeçalho{
+
+  background-color: #00539C;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 3px 12px #000;
+  position: absolute;
+
+}
+
+.logo{
+
+  height: 1.5cm;
+  width: 1.5cm;
+  margin-top: 5px;
+  margin-left: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10cm;
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+
+
+.IconeUsuario img{
+
+  height: 1.3cm;
+  margin: auto;
+  margin-right: 30px;
+  display: flex;
+  width: 1.3cm;
+  justify-content: flex-start;
+}
+
+
+p{
+  font-size: 110%;
+}
+
+.container{
+  transform: scale(1.2);
+  background-color: #E1E1E1;
+  box-shadow: 3px 3px 13px;
+  box-shadow: #000;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  height: 364px;
+  width: 300px;
+  border-radius: 30px;
+  margin-top: 200px;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+#informacoes{
+  display: flex;
+  flex-direction: column; 
+  width: 85%;
+  height: 150px;
+ 
+}
+
+
+
+.containerInput{
+  width: 200px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerInput{
+  margin-left: 30px;
+}
+
+.containerInput label{
+  align-self: flex-start;
+}
+
+
+.botaoCadastrar button{
+
+  background-color: #00539C;
+  border: solid;
+  border-color: #E1E1E1;
+  border-radius: 15px;
+  margin-top: 25px;
+  font-size: 95%;
+  color: aliceblue;
+  height: 35px;
+  width: 120px;
+}
+
+.voltar {
+  text-decoration: none; 
+  color: #00539C;
+  margin-top: 20px;
+  font-size: 90%;
+}
+
+
+.voltar:hover {
+  text-decoration: underline;
+}
+
+img{
+ 
+  margin-top: 15px;
+  height: 80px;
+  width: 80px;
+}
+
+.logo2 img{
+
+  height: 65px;
+  width: 65px;
+  
+}
+
+
+input{
+  border: solid;
+  border-width: 1px;
+  border-radius: 7px;
+  border-color: #00539C;  
+  width: 230px;    
+  height: 20px;
+  margin-top: 3%;
+  outline: 0;
+  background-color: whitesmoke;
+}
+
+#avisoErro{
+
+  transform: scale(0.8);
+  margin-top: 5px;
+  color: red;
+  
+}
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #00539C;
+    box-shadow: 0 0 0 2px #00539C;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #00539C;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #00539C;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: whitesmoke;;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: whitesmoke;;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #00539C;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+ 
+  
+.iconeUsuario{
+   width: 30%; 
+   height: 19%;
+}
+
+
+.botao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(0.6);
+}
+
+.input-icon{
+
+display: flex;
+align-items: center;
+height: 20px;
+}
+
+.iconEmail{
+  transform: scale(1.1);
+
+  width: 24px; 
+  height: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.labelInput{
+  font-size: 92%;
+  
+} 

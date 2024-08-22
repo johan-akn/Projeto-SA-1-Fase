@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> <link rel="stylesheet" href="login-sa.css">
+</head>
+<body>
+
+    <div class="Cabeçalho">
+        <a href="/FarmaFind - Tela Inicio/inicio.html">
+            <img class="logoNavbar" src="/imgs/logo.png">
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="logo">
+            <img src="/imgs/logo.png" alt="logo-FarmaFind">
+        </div>
+
+        
+        <p>Login Farmácia</p>
+       
+            
+            <div class="containerInput">
+                <label class="labelInput">Email:</label>
+                <div class="input-icon">
+                    <img src="/imgs/icone email.png.png" class="iconEmail">
+                    <input type="email" id="inptEmailLogin">
+                </div>
+            </div>
+
+         
+            <div class="containerInput">
+                <label class="labelInput">Senha:</label>
+                <div class="input-icon">
+                    <img src="/imgs/icone chave.png" class="iconEmail">
+                    <input type="password" id="inptSenhaLogin">
+                </div>
+            </div>
+
+              <label id="avisoErro"></label>
+
+            
+            <div class="fraseLink">      
+                <a href="/FarmaFind - Rec Senha/recuperaçãoSenha.html">Esqueci a senha</a>
+            </div>
+          
+
+        <div class="botao">
+            <button class="animated-button" onclick="BotaoLogin()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+                <span class="text">Entrar</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+            
+        <div class="fraseLink">
+            <label>Não possui conta?</label>
+            <a href="/FarmaFind - Cadastro/cadastro-sa.html">Cadastre-se aqui</a>
+        </div>
+
+    
+
+    <script src="/codigos-sa.js"></script>
+
+</body>
+</html>

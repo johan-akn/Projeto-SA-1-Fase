@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recuperaçãoSenha.css">
+    <title>Redefinição de Senha</title>
+</head>
+<body>
+    
+    <div class="Cabeçalho">
+        <a href="/FarmaFind - Tela Inicio/inicio.html">
+            <img class="logo" src="/imgs/logo.png" >  
+        </a>
+    </div>
+
+    <div class="container">
+        
+        <div class="logo2">
+            <img class="iconeUsuario" src="/imgs/ícone usuário azul escuro.png" alt="icone usuario">
+        </div>
+
+        <p>Redefinição de Senha</p>
+
+        
+        <div id="informacoes">
+            <div class="containerInput">
+                <label class="labelInput">Email: </label>
+                <div class="input-icon">
+                <img src="/imgs/icone email.png.png" class="iconEmail">
+                <input type="email" id="inptEmailRec">
+            </div>
+            </div>
+            
+            <div class="containerInput">
+                <label class="labelInput">Nova senha:</label>              
+                <div class="input-icon">
+                <img src="/imgs/icone chave.png" class="iconEmail">
+                <input type="password" id="inptSenhaRec">
+            </div>
+        </div>
+
+        <div class="containerInput">
+                <label class="labelInput">Confirmar senha:</label>
+                <div class="input-icon">
+                <img src="/imgs/icone chave.png" class="iconEmail">
+                <input type="password" id="inptSenhaConfirmRec">
+            </div>
+            </div>
+
+        </div>
+        <div class="botao">
+            <button onclick="AlterarSenha()" class="animated-button">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+                <span class="text">Enviar</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+
+        <label id="avisoErro"></label>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/codigos-sa.js"></script>
+
+</body>
+</html>

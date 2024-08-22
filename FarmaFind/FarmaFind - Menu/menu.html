@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body onload="PuxarDados()">
+    <div class="Cabeçalho">
+        <a href="/FarmaFind - Tela Inicio/inicio.html">
+            <img class="logo" src="/imgs/logo.png">  
+        </a>
+    </div>
+    <div class="Container">
+        <div class="ContainerDados">
+            <div class="ContainerPerfil">
+                <a href="/FarmaFind - Tela Inicio/inicio.html">
+                    <img class="iconeAzul" src="/imgs/ícone usuário azul escuro.png">
+                </a>
+                <h2>
+                    <p>Menu</p>
+                </h2>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span id="closePopup" class="close">&times;</span>
+                    <h2>Produto editado com sucesso!</h2>    
+                </div>
+            </div>
+
+            
+            <div class="dados-botoes">
+                <div class="Dados">
+                    <div class="Inputs">
+                        <label>Email:</label>
+                        <input disabled type="email"  id="inptEmailPerfil">
+                    </div>
+                    <div class="Inputs">
+                        <label>CNPJ:</label>
+                        <input disabled type="text" id="inptCNPJPerfil">
+                    </div>
+                    <div class="Inputs">
+                        <label>Endereço:</label>
+                    <input disabled type="text" id="inptEnderecoPerfil">
+                </div>
+                <div class="Inputs">
+                    <label>Senha:</label>
+                    <input disabled type="password" id="inptSenhaPerfil">
+                </div>
+                
+                <div class="botao">
+                    <button id="botaoEditar" onclick="EditarPerfil()">Editar Dados</button>
+                    <button id="botaoEnviar" onclick="EnviarEdicao()">Enviar</button>
+                </div>
+            </div>
+            
+            
+            <div class="OpcoesBotoes">
+                <button onclick="BotaoProdutos()">Meus Produtos</button>
+                <button onclick="BotaoExcluir()" >Excluir Conta</button>
+            </div>
+
+        </div>
+            
+                
+        </div>
+    </div>
+
+    <script src="/codigos-sa.js"></script>
+</body>
+</html>

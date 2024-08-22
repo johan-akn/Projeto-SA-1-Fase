@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="item.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<body onload="PuxarEstado()">
+    <div class="Cabeçalho">
+        <a href="/FarmaFind - Tela Inicio/inicio.html">
+                <img class="logoNavbar" src="/imgs/logo.png" >  
+            </a>
+            <div class="IconeUsuario">
+         <a href="/FarmaFind - Menu/menu.html"><img class="usuario" src="/imgs/icone usuario cinza.png"></a>
+          </div>
+    </div>
+    
+    <button id="openPopup" onclick="abrirPopup()"></button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Produto editado com sucesso!</h2>    
+        </div>
+    </div>
+
+    <div id="cardsContainer" class="container">
+    <div class="container">
+
+            
+            <div class="card">
+                    <p>Dipirona</p>
+            <img class="imgRemedio" src="/imgs/dipirona.webp" alt="">
+               <div class="botao">                   
+                        <button class="botaoDisponivel" onclick="BotaoDisp(); abrirPopup();">Disponível</button>            
+                        <button  class="botaoIndisponivel" onclick="BotaoIndisp(); abrirPopup();">Indisponível</button>                   
+                </div>
+                <label id="avisoMudanca"></label>
+        </div>
+
+        
+        
+        <div class="card">
+                    <p>Ibuprofeno</p>
+            <img class="imgRemedio" src="/imgs/ibuprofeno.png" alt="">
+               <div class="botao">                   
+                        <button class="botaoDisponivel" onclick="BotaoDisp2(); abrirPopup();">Disponível</button>            
+                        <button class="botaoIndisponivel" onclick="BotaoIndisp2(); abrirPopup();">Indisponível</button>                       
+                </div>
+                <label id="avisoMudanca2"></label>
+        </div>
+
+        
+        <div class="card">
+                <p>Neosaldina</p>
+        <img class="imgRemedio" src="/imgs/neosaldina.webp" alt="neosaldina">
+           <div class="botao">                   
+                    <button class="botaoDisponivel" onclick="BotaoDisp3(); abrirPopup();">Disponível</button>            
+                    <button class="botaoIndisponivel" onclick="BotaoIndisp3(); abrirPopup();">Indisponível</button>                       
+            </div>
+            <label id="avisoMudanca2"></label>
+    </div>
+    
+        <div class="card">
+                    <p>Cetocozanol</p>
+            <img class="imgRemedio" src="/imgs/cetoconazol.webp" alt="cetocozanol">
+               <div class="botao">                   
+                        <button class="botaoDisponivel" onclick="BotaoDisp4(); abrirPopup();">Disponível</button>            
+                        <button class="botaoIndisponivel" onclick="BotaoIndisp4(); abrirPopup();">Indisponível</button>                       
+                </div>
+                <label id="avisoMudanca2"></label>
+        </div>
+        
+        
+        <div class="card">
+                <p>Clonazepam</p>
+        <img class="imgRemedio" src="/imgs/clonazepam.jpg" alt="Clonazepam">
+           <div class="botao">                   
+                    <button class="botaoDisponivel" onclick="BotaoDisp5(); abrirPopup();">Disponível</button>            
+                    <button class="botaoIndisponivel" onclick="BotaoIndisp5(); abrirPopup();">Indisponível</button>                       
+            </div>
+            <label id="avisoMudanca2"></label>
+        </div>
+
+</div>
+        
+        
+       
+        </div> 
+
+            
+            <script src="/codigos-sa.js"></script>
+</body>
+</html>
